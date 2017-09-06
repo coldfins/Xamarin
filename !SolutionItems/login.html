@@ -1,0 +1,50 @@
+﻿<html>
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="description">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <base url="/"/>
+</head>
+<body style="background-color: #3C444D">
+    <div class="container container-rounded">
+        <div class="container container-inside">
+            <div class="row text-left imagepadding">
+                <img src="icon.png">
+            </div>
+            <div class="row text-left">
+                <label>
+                    <strong> Username</strong>
+                </label>
+            </div>
+            <div class="row text-left">
+                <input type="text" id="Username" placeholder="Username" class="form-control text-left text-username" style="height: 10%; width: 30%">
+            </div>
+            <div class="row text-left">
+                <label>
+                    <strong> Password</strong>
+                </label>
+            </div>
+            <div class="row text-left">
+                <input type="password" id="Password" placeholder="Password" class="form-control text-left text-username" style="height: 10%; width: 30%">
+            </div>
+            <div class="row text-left">
+                <button type="submit" class="btn btn-primary" style="width: 30%" onclick="javascript: loginApp()">Sign In</button>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        function loginApp() {
+            var loginData =  {
+                UserName: document.getElementById("Username").value,
+                Password: document.getElementById("Password").value
+            }
+            console.log(loginData);
+            alert();
+            Native("loginApp", loginData);
+        }
+    </script>
+</body>
+</html>

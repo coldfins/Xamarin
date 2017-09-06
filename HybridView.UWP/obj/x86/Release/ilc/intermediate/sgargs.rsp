@@ -1,0 +1,12 @@
+/out:"D:\Xamarin\Latest\HybridView_24-Aug_2017_06-35\HybridView\HybridView.UWP\obj\x86\Release\ilc\intermediate\SgGenerated\\"
+/int:"D:\Xamarin\Latest\HybridView_24-Aug_2017_06-35\HybridView\HybridView.UWP\obj\x86\Release\ilc\intermediate\\"
+/ref:"D:\Xamarin\Latest\HybridView_24-Aug_2017_06-35\HybridView\HybridView.UWP\obj\x86\Release\ilc\intermediate\PreMergeILTransformed"
+/ref:"D:\Xamarin\Latest\HybridView_24-Aug_2017_06-35\HybridView\HybridView.UWP\obj\x86\Release\ilc\intermediate\TransformedSRWR"
+/ref:"D:\Xamarin\Latest\HybridView_24-Aug_2017_06-35\HybridView\HybridView.UWP\obj\x86\Release\ilc\in"
+/ref:"D:\Xamarin\Latest\HybridView_24-Aug_2017_06-35\HybridView\HybridView.UWP\obj\x86\Release\ilc\in\\"
+/ref:"D:\Xamarin\Latest\HybridView_24-Aug_2017_06-35\HybridView\HybridView.UWP\obj\x86\Release\ilc\in\\"
+/ref:"C:\Users\ved-pc\.nuget\packages\microsoft.net.native.compiler\1.6.3\tools\x86\ilc\lib\Private\\"
+/ref:"D:\Xamarin\Latest\HybridView_24-Aug_2017_06-35\HybridView\HybridView.UWP\obj\x86\Release\ilc\in\WinMetadata"
+/ca:System.Private.CoreLib
+/cscpath:"C:\Users\ved-pc\.nuget\packages\microsoft.net.native.compiler\1.6.3\tools\x86\ilc\csc"
+"@D:\Xamarin\Latest\HybridView_24-Aug_2017_06-35\HybridView\HybridView.UWP\obj\x86\Release\ilc\intermediate\PreMergeILTransformed\ComputedSerializationInput.txt"

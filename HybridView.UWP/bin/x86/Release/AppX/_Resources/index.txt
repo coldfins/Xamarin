@@ -1,0 +1,13 @@
+HybridView, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  HybridView.Resources.pdf.png
+  HybridView.Resources.ppt.png
+  HybridView.Resources.3gp.png
+  HybridView.Resources.doc.png
+  HybridView.Resources.gif.png
+  HybridView.Resources.jpg.png
+  HybridView.Resources.rtf.png
+  HybridView.Resources.txt.png
+  HybridView.Resources.wav.png
+  HybridView.Resources.xls.png
+  HybridView.Resources.xml.png
+  HybridView.Resources.zip.png

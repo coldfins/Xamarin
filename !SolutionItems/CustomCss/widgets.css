@@ -1,0 +1,858 @@
+﻿/* range css Style */
+.range-body {
+    display:inline-block;
+    overflow:hidden;
+}
+
+.range-body> div {
+    display:inline-block;
+    float:left;
+    height: 17px;
+    font-family:Arial;
+    font-size:14px;
+    border: 1px solid #333;
+    color: #4285f4;
+}
+.range-body> div:hover {
+    background-color:#ddd;
+}
+
+
+.range-body > .value_btn {
+    border-left:none;
+    border-right:none;
+}
+.value_btn div {
+    height:100%;
+    display:inline-block;
+    float:left;
+}
+
+.value_btn div:first-child {
+    text-align:right;
+    padding-left:10px;
+}
+
+.value_btn div:last-child {
+
+    padding-right: 10px;
+}
+
+.minus_btn,
+.plus_btn {
+    width: 17px;
+    text-align:center;
+}
+
+.range-disabled > div {
+
+    color: #FFF;
+    background-color:#bbb;
+
+}
+
+.range-disabled> div:hover {
+    background-color:#bbb;
+}
+
+/* dropdown css Style */
+.as-drpdwn {
+    border: 1px solid #ddd;
+    display:inline-block;
+    height: 24px;
+    min-width: 60px;
+}
+
+.drpdwn-btn { 
+    width: 100%;
+    height:100%;
+    font-size:14px;
+    font-family:Arial;
+}
+
+.drpdwn-btn.disabled {
+    background-color:#ddd;
+    color:#444;
+}
+
+
+.as-drpdwn:hover {
+    background-color:#ddd;
+}
+
+.as-drpdwn:hover div {
+    color: #4285f4;
+}
+
+.drpdwn-btn.disabled:hover div {
+    color: #4285f4;
+}
+
+.drpdwn-btn > div {
+    height: 100%;
+    box-sizing:border-box;
+}
+
+.drpdwn-btn > .selection {
+    padding-left:5px;
+    padding-right:10px;
+    padding-top:4px;
+    padding-bottom:4px;
+    overflow:hidden;
+    box-sizing:border-box;
+    white-space:nowrap;
+    color: #666;
+}
+
+.drpdwn-btn > .fa {
+    padding-right:5px;
+    padding-top:3px;
+    float: right;
+    color: #444;
+}
+
+
+.as-drpdwn .drpdwn-list {
+    font-size:0;
+    display:none;
+    position:absolute;
+    list-style:none;
+    border: 1px solid #ddd;
+    padding:0;
+    background-color:white;
+    z-index:1100;
+    /*left:0;*/
+    /*top:0;*/
+    max-height: 280px;
+    overflow-y:scroll;
+}
+
+.drpdwn-list > li {
+    overflow:hidden;
+    font-family:Arial;
+    font-size:14px;
+    padding: 5px 20px;
+    color: #4285f4;
+    white-space:nowrap;
+    box-sizing:border-box;
+    cursor:pointer;
+}
+
+.drpdwn-list > li:not(.disabled):hover {
+    background-color:#ddd;
+    color: #333;
+}
+
+.drpdwn-list > li.disabled {
+    background-color: #ddd;
+    color:white;
+    cursor:default;
+}
+
+.as-drpdwn.disabled {
+
+    background-color:#ddd;
+}
+
+/* Color Picker Widget */
+.as-colorpicker {
+    width: 100%;
+    height:50px;
+    border-bottom:1px solid #ddd;
+}
+
+.as-colorpicker > div {
+    display:inline-block;
+    float:left;
+}
+
+.as-colorpicker > .title {
+    width: 40%;
+    height: 100%;
+    font-family:Arial;
+    color:#333;
+    background-color:white;
+    font-size:14px;
+    padding:3px;
+    padding-left:10px;
+    line-height:150%;
+    box-sizing:border-box;
+}
+
+.as-colorpicker > .btn {
+    width: 60%;
+    height: 25px;
+    background-color:#222;
+    vertical-align:top;
+}
+
+.btn > button {
+    border:none !important;
+    background:white;
+    height:25px;
+    color: white;
+    float:right;
+    width:100%;
+}
+
+.btn > button:hover {
+    background:#318CB8;
+    color: white;
+    border: 1px solid #318CB8;
+}
+.btn > button > span {
+    padding: 0;
+    float:right;
+}
+
+.as-colorpicker > .colors {
+    width:60%;
+    height:23px;
+    background-color:white;
+}
+.color.fa,
+.colors > .color {
+    display:inline-block;
+    height: 100%;
+    width: 23px;
+    border: 3px solid white;
+    vertical-align:top;
+    box-sizing:border-box;
+}
+
+.color.trans {
+
+    background-image:url(../../Images/UIDesigner/transparent.svg) !important;
+}
+
+.as-colorpicker.small  > .color:hover {
+    border: none;
+    border: 3px solid #318CB8;
+}
+
+.as-colorpicker.small  {
+    float:left;
+    display:inline-block;
+    background:white;
+    padding: 0px;
+    overflow:hidden;
+    height:25px;
+    width:auto;
+}
+
+.as-colorpicker.small span {
+    line-height:25px;
+    color:#666;
+
+}
+
+.as-colorpicker.small > .color-btn {
+    /*border: 1px red solid;*/
+    display:inline-block;
+    padding:3px;
+    width:28px;
+    height:100%;
+    vertical-align:top;
+    float:left;
+    border:1px solid #aaa;
+    border-right:none;
+    border-top-left-radius:3px;
+    border-bottom-left-radius:3px;
+    box-sizing:border-box;
+}
+
+.as-colorpicker.small .color {
+    height:15px;
+    width:20px;
+    display:inline-block;
+    background-color:white;
+    border:1px solid black;
+}
+
+.as-colorpicker.small > .arrow {
+    float:left;
+    height: 100%;
+    width:15px;
+    /*border: 1px blue solid;*/
+    display:inline-block;
+    vertical-align:top;
+    border:1px solid #aaa;
+    border-top-right-radius:3px;
+    border-bottom-right-radius:3px;
+    box-sizing:border-box;
+    padding-left:2px;
+}
+.as-colorpicker.small > .color-btn:hover {
+    background-color:#ddd;
+    border:1px #ddd solid;
+}
+
+
+.as-colorpicker.small > .arrow:hover {
+    background-color:#ddd;
+    border:1px #ddd solid;
+}
+
+/*.as-colorpicker.small > .arrow:hover > span {
+    color:white;
+}*/
+
+
+/* color picker */
+#color_picker {
+    box-shadow:5px 5px 5px #ccc;
+    width:300px;
+    height:280px;
+    position:absolute;
+    z-index:1001;
+}
+
+#color_picker > .heading > div {
+    display:inline-block;
+}
+
+#color_picker .close {
+    width: 10%;
+    padding-left: 3%;
+    box-sizing:border-box;
+    float:right;
+    color: white;
+    cursor:pointer;
+}
+
+
+#color_picker .close:hover {
+
+    background:#ddd;
+    font-weight:bold;
+}
+
+#color_picker > .heading {
+    width:97%;
+    height: 30px;
+    font-family:Arial;
+    font-size:large;
+    line-height:30px;
+    padding-left:3%;
+    background:#aaa;
+    color:white;
+}
+
+#color_picker > .body {
+    width:100%;
+    height:250px;
+    background:#ddd;
+    padding-left: 8px;
+    box-sizing:border-box;
+}
+
+.body > * {
+    display:inline-block;
+    float:left;
+    vertical-align:top;
+}
+
+#color_code_input {
+    width: 100%;
+    height: 35px;
+    overflow:hidden;
+    padding: 0px 30px;
+    box-sizing:border-box;
+    text-align:center;
+    padding-top:5px;
+}
+
+#color_code_input > div {
+
+    display:inline-block;
+}
+
+#color_code_input > div {
+    height: 20px;
+    width:20px;
+    margin-top:1px;
+    border: 1px solid #ddd;
+    background-color:black;
+}
+
+#color_code_input > input {
+    height: 25px;
+    width:155px;
+    margin-left:20px;
+    vertical-align:top;
+    border:1px solid white;
+    border-radius:2px;
+    text-align:center;
+    font-size:medium;
+    padding: 0px 10px;
+    box-sizing:border-box;
+}
+
+.color-img {
+    width: 210.6px;
+	height: 179.1px;
+}
+#hexagon {
+	width:18px;
+	height: 18px;
+	visibility: visible; 
+	position: relative;  
+    background-repeat:no-repeat;
+	background-image: url(../../Images/UIDesigner/selectedcolor.gif);
+	background-size: contain;
+    top: -103px;
+    left: 100.5px;
+}
+
+.map {
+    width:70%;
+    height:80%;
+
+}
+
+.map > img {
+    margin-left:5px;
+    margin-top:10px;
+}
+
+#shades_list {
+	width: 30%;
+	height: 80%;
+}
+
+.body > div:last-child {
+    width:100%;
+    height:20%;
+}
+
+.body button {
+    border: solid 1px #318CB8;
+    background:white;
+    height:25px;
+    color: #318CB8;
+    width:40%;
+    margin-top:5px;
+    margin-left:18px;
+}
+
+.body button:hover {
+    background:#318CB8;
+    color: white;
+}
+
+#shades_list > table {
+    margin-top:15px;
+    margin-left:23px;
+	border-collapse: collapse;
+}
+
+#shades_list > table td {
+	cursor: pointer;
+	width: 50px;
+	height: 13px;
+}
+
+#shades_list > table td:hover,
+#shades_list td.active  {
+    outline:2px solid #aaa;
+}
+
+/* formatpicker */
+.formatpicker {
+
+    width: 100%;
+    height:100%;
+}
+
+.formatpicker > div {
+    display:inline-block;
+    float:left;
+    box-sizing:border-box;
+    height: 100%;
+}
+
+.formatpicker > div:first-child {
+    padding: 5px 0px;
+    padding-left: 5px;
+    width: 60%;
+    background-color: #f5f5f5;
+
+}
+
+.formatpicker > div:last-child {
+    padding: 12px 0px;
+    text-align:center;
+    width: 40%;
+}
+
+.formatpicker > div > button {
+    width: 20%;
+    height: 30px;
+    display:inline-block;
+    float:left;
+    margin:0;
+    border: 1px solid #ddd;
+    background-color:white;
+}
+
+.formatpicker > div > button:not(:first-child) {
+
+    border-left:0;
+}
+
+.formatpicker > div > button.dcml {
+
+    width: 35%;
+}
+
+.formatpicker button.cancel {
+
+    background-color:#ccc;
+    color:white;
+}
+/* formatpicker-end */
+
+
+
+/* dialog */
+/* modal */
+.ui-widget-overlay { 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+    background-color:#666;
+    opacity:0.4;
+    text-align:center;
+    color:black;
+}
+
+.ui-widget-overlay span {
+
+    margin-top:25%;
+}
+
+.ui-dialog {
+    border: none;
+    border-radius: 7px;
+    position:absolute;
+    z-index: 999;
+    box-shadow: 5px 5px 5px #ccc;
+    background-color:#f5f5f5;
+}
+
+.ui-dialog.has-close .ui-dialog-titlebar-close  {
+    display:inline;
+}
+
+    .ui-dialog-titlebar-close {
+      display: none;
+      float:right;
+      border:none;
+      background-color:transparent;
+      font-size:medium;
+    }
+
+    .ui-dialog-titlebar {
+        padding: 10px 10px 0;
+        border-radius: 0px;
+        background-color: #f5f5f5; 
+        /*border:1px solid white;*/
+        border-bottom: 1px solid #f5f5f5;
+        height: 30px;
+        border-top-left-radius:0px;
+        border-top-right-radius:0px;
+        /*border: none;*/
+    }
+        .ui-dialog-title {
+            margin-top: 0;
+            margin-bottom: 0;
+            color:#444;
+            font-family:Arial;
+            font-size:18px;
+        }
+
+        .ui-dialog-titlebar-close {
+            overflow: hidden;
+        }
+
+    .ui-dialog-content {
+        opacity:initial;
+        background-color:#f5f5f5;
+        overflow:hidden;
+        padding: 10px;
+        box-sizing:border-box;
+    }
+
+        .ui-dialog-buttonset {
+            padding: 20px 15px 30px;
+            background-color:#f5f5f5;
+            overflow:hidden;
+            padding-bottom:10px;
+            border-bottom-left-radius:0px;
+            border-bottom-right-radius:0px;
+        }
+
+            .ui-dialog-buttonset > button {
+                display: inline-block;
+                text-align: center;
+                white-space: nowrap;
+                cursor: pointer;
+                color: white;
+                margin-left: 5px;
+                padding: 5px 10px;
+                font-size: small;
+                height: 30px;
+                min-width: 80px;
+                border-radius:3px;
+                float: right;
+            }
+
+            /*.ui-dialog-buttonset > button:nth-child(3){
+                background-color: #6eb5e6;
+                border: 1px solid #6eb5e6;
+                float:left;
+            }
+
+            .ui-dialog-buttonset > button:nth-child(2){
+                background-color: #27a347;
+                border: 1px solid #27a347;
+            }
+
+            .ui-dialog-buttonset > button:first-child {
+                background-color: #f1c95a;
+                border: 1px solid #f1c95a;
+            }
+
+            .ui-dialog-buttonset > button:nth-child(2):hover,
+            .ui-dialog-buttonset > button:nth-child(2):focus,
+            .ui-dialog-buttonset > button:nth-child(2):active {
+                background-color: #0b852b; 
+
+            }
+
+            .ui-dialog-buttonset > button:first-child:hover,
+            .ui-dialog-buttonset > button:first-child:focus,
+            .ui-dialog-buttonset > button:first-child:active {
+                background-color: #f8c128; 
+
+            }
+
+            .ui-dialog-buttonset > button:nth-child(3):hover,
+            .ui-dialog-buttonset > button:nth-child(3):focus,
+            .ui-dialog-buttonset > button:nth-child(3):active {
+                background-color: #4285f4; 
+            }*/
+
+            .ui-dialog-buttonset > button:nth-child(3){
+                
+                float:left;
+
+                 background-color: #f1c95a;
+                border: 1px solid #f1c95a;
+            }
+
+            .ui-dialog-buttonset > button:nth-child(2){
+                
+               background-color: #4285f4;
+                border: 1px solid #6eb5e6;
+
+                  background-color: #bbb;
+                border: 1px solid #bbb;
+                /*color: #111;*/
+
+                background-color: #27a347;
+                border: 1px solid #27a347;
+            }
+
+            .ui-dialog-buttonset > button:first-child {
+                background-color: #27a347;
+                border: 1px solid #27a347;
+
+                background-color: #6eb5e6;
+                border: 1px solid #6eb5e6;
+
+                background-color: #4285f4;
+                border: 1px solid #4285f4;
+              
+            }
+
+            .ui-dialog-buttonset > button:nth-child(2):hover,
+            .ui-dialog-buttonset > button:nth-child(2):focus,
+            .ui-dialog-buttonset > button:nth-child(2):active {
+                 background-color: #4285f4; 
+
+                background-color: #0b852b; 
+
+            }
+
+            .ui-dialog-buttonset > button:first-child:hover,
+            .ui-dialog-buttonset > button:first-child:focus,
+            .ui-dialog-buttonset > button:first-child:active {
+                background-color: #0b852b; 
+
+                background-color: #1c4fa3; 
+            }
+
+            .ui-dialog-buttonset > button:nth-child(3):hover,
+            .ui-dialog-buttonset > button:nth-child(3):focus,
+            .ui-dialog-buttonset > button:nth-child(3):active {
+                background-color: #f8c128; 
+
+            }
+
+            .ui-dialog-buttonset > button.disabled {
+                cursor: not-allowed;
+                filter: alpha(opacity=65);
+                -webkit-box-shadow: none;
+                      box-shadow: none;
+                opacity: .65;
+            }
+/* validation */
+.ui-effects-wrapper > textarea {
+
+    font-family:Arial;
+    font-size:15px;
+    color:#4285f4;
+    padding: 5px 15px;
+}
+
+.validate-modal {
+    width: 100%;
+    height:100%;
+    background:transparent;
+    position:absolute;
+    z-index:500;
+    margin:0;
+    overflow:hidden;
+    left: 0;
+    top: 0;
+}
+
+.error-banner {
+    width: 250px;
+    overflow:hidden;
+    border-radius:3px;
+    background-color:red;
+    color:white;
+    padding:5px 10px;
+    font-size:small;
+    box-sizing:border-box;
+}
+
+.ui-dialog-content > .error-banner {
+    width: 100%;
+    /*height: 80px;*/
+    overflow-y:auto;
+}
+
+.validate-failed-modal {
+
+    border: 1px solid red !important;
+    z-index: 501;
+    position: relative;
+}
+
+.validate-failed {
+
+    border: 1px solid red !important;
+}
+
+
+/* selectable */
+.ui-selectable {
+	-ms-touch-action: none;
+	touch-action: none;
+}
+.ui-selectable-helper {
+	position: absolute;
+	z-index: 100;
+	border: 1px solid #318CB8;
+    background-color:rgba(49, 140, 184, 0.6);
+}
+/* datepicker */
+.ui-datepicker {
+    background-color:white;
+    padding: 15px;
+    box-shadow: 0px 0px 3px 3px #ddd;
+    border-radius:5px;
+}
+
+.ui-datepicker-calendar {
+    border-spacing:10px;
+}
+
+.ui-datepicker-calendar td, 
+.ui-datepicker-calendar th {
+    text-align:center;
+    border-radius:6px;
+    width: 23px;
+    height:23px;
+
+    /*background-color:#eee;*/
+}
+
+.ui-datepicker-calendar a {
+    color: #666;
+    text-decoration:none;
+}
+
+.ui-datepicker-header  {
+
+    padding: 5px 0px;
+    box-sizing:border-box;
+}
+.ui-datepicker-header > div {
+    display:inline-block;
+}
+
+.ui-datepicker-prev {
+    float:left;
+    color: #4285f4;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+.ui-datepicker-next {
+    float: right;
+    color: #4285f4;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+.ui-datepicker-title {
+    width: 74%;
+    text-align:center;
+    font-weight:bold;
+}
+
+.ui-datepicker-current-day {
+
+    background-color:#4285f4;
+}
+
+.ui-datepicker-current-day > a {
+    color: white;
+}
+
+.ui-datepicker-other-month > span {
+    color: #ccc;
+}
+
+.ui-datepicker-today {
+    background-color:#ddd;
+}
+
+.ui-datepicker-today > a {
+    color: #4285f4;
+    font-weight:bold;
+}
+
+/* ripple */
+.rpl {
+    position:absolute;
+    z-index:0;
+    opacity:0.2;
+}
+

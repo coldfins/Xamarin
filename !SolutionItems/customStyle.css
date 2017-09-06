@@ -1,0 +1,997 @@
+﻿ @import url(https://fonts.googleapis.com/css?family=Raleway);
+
+ * {
+     outline: none;
+ }
+
+ input[type="date"]::-webkit-input-placeholder {
+     visibility: hidden !important;
+ }
+
+ input[type=date]::-webkit-inner-spin-button,
+ input[type=date]::-webkit-calendar-picker-indicator {
+     display: none;
+ }
+
+ .fa {
+     font-size: 16px;
+ }
+
+
+ .view {
+     /*padding: 10px;*/
+     padding-top: 0;
+     /*height: 2000px;*/
+     width: 980px;
+     box-sizing: border-box;
+     margin-left: 10px;
+     margin-right: auto;
+     background-color: #fff;
+     font-family: Arial;
+ }
+
+
+ .c0, .c1, .c2, .c3, .c4, .c5, .c6, .c7,
+ .c8, .c9, .c10, .c11, .c12, .c13, .c14, c15,
+ .c16, .e0, .e1, .e2 {
+     vertical-align: top;
+     display: inline-block;
+     border-radius: 3px;
+     box-sizing: border-box;
+     font-size: small;
+     font-family: Arial;
+ }
+
+ .c0, .c1, .c2, .c3, .c4, .c5, .c6, .c7, .c11, .c12, .c13 {
+     border-radius: 3px;
+     border: 1px solid #d9d9d9;
+     /*border-top: 1px solid #c0c0c0;*/
+     min-height: 25px;
+     padding: 1px 8px;
+     background-color: #fff;
+ }
+
+ .c0, .c14 {
+     padding: 6px 12px;
+     height: 30px;
+     width: 100%;
+     border: 1px solid #ddd;
+ }
+
+
+ .c1 {
+     width: 100%;
+     padding: 6px 12px;
+ }
+
+ /* rich text box */
+ /* ///////////////////////////////////////////////////////////// */
+ .c2 {
+     border: 1px solid #ddd;
+     width: 100%;
+     padding: 0;
+ }
+
+ .c2 > div:nth-child(2) {
+     overflow: hidden;
+ }
+
+ .c2 .line {
+     float: left;
+     display: inline-block;
+     width: 100%;
+     box-sizing: border-box;
+     padding: 5px;
+     min-height: 39px;
+     height: auto;
+     text-align: left;
+ }
+
+ .c2 .notepad {
+     padding: 6px 12px;
+     min-height: 50px;
+     box-sizing: border-box;
+     text-align: left;
+     font-weight: normal;
+     height: 80px;
+     width: 100%;
+     border-top: #ddd 1px solid;
+     overflow: auto;
+ }
+
+ .c2:not([disabled]) .notepad:hover,
+ .c2:not([disabled]) .notepad:active,
+ .c2:not([disabled]) .notepad:focus {
+     /*border: 1px solid #292f33;*/
+     /*box-shadow: 0 0 5px #292f33;*/
+ }
+
+ .c2:not([disabled]):hover,
+ .c2.active {
+     box-shadow: 0 0 5px #292f33;
+ }
+
+ .c2 .line .custom-btn-group {
+     display: inline-block;
+     overflow: hidden;
+ }
+
+ .c2 .line .custom-btn-group .fa {
+     top: -2px;
+     position: relative;
+     color: #666;
+     font-size: 13.3333px;
+     left: -1px;
+ }
+
+ .c2 .line .custom-btn-group > span {
+     height: 30px;
+     width: 30px;
+     line-height: 30px;
+     font-size: 13px;
+     text-align: center;
+     float: left;
+ }
+
+ .c2 .line .custom-btn-group > img {
+     float: left;
+     padding: 2.5px;
+ }
+
+ .c2 .line button {
+     display: block;
+     float: left;
+     background-color: #fff;
+     border: #ddd 1px solid;
+     height: 25px;
+     width: 25px;
+     padding: 7px;
+     margin-right: 2px;
+ }
+
+ .c2.active .line button {
+     cursor: pointer;
+ }
+
+ .line button:not(:disabled):hover,
+ .line select:not(:disabled):hover {
+     color: #292f33;
+     background-color: #fff;
+     border: 1px solid #292f33;
+ }
+
+ .c2 .line button.active {
+     background-color: #4285f4;
+ }
+
+ .c2 .line button.active > .fa {
+     color: white;
+ }
+
+
+ .c2 .line .custom-btn-group > .as-drpdwn,
+ .c2 .line .custom-btn-group > select {
+     font-size: 13px;
+     height: 25px;
+     display: block;
+     float: left;
+     margin-right: 2px;
+ }
+
+ .c2 .line .custom-btn-group > select option {
+     padding: 2px 5px;
+ }
+
+ .c2 .line .custom-btn-group .as-range {
+     vertical-align: top;
+     overflow: hidden;
+ }
+
+ .c2 .as-range > div {
+     float: left;
+     width: 23px;
+     height: 23px;
+     padding: 0px;
+     text-align: center;
+     line-height: 23px;
+     border: 1px solid #ddd;
+     color: #333;
+ }
+
+ .c2 .line .custom-btn-group .as-range .fa {
+     left: 0px;
+     top: 3px;
+     font-size: 16px;
+ }
+
+ .c2.active:not([disabled]) .as-range .minus-btn:hover,
+ .c2.active:not([disabled]) .as-range .plus-btn:hover {
+     border: 1px #292f33 solid;
+ }
+
+ /* colorpicker */
+ .c2 .as-colorpicker {
+     float: left;
+     width: 40px;
+     height: 23px;
+     margin-right: 3px;
+     margin-top: 1px;
+ }
+
+ .c2 .as-colorpicker > .color-btn {
+     display: inline-block;
+     padding: 3px;
+     width: 100%;
+     height: 100%;
+     vertical-align: top;
+     border: 1px solid #ddd;
+     border-radius: 3px;
+     box-sizing: border-box;
+ }
+
+ .c2.active:not([disabled]) .line .custom-btn-group > .as-colorpicker > .color-btn:hover,
+ .c2.active:not([disabled]) .line .custom-btn-group > .as-colorpicker > .color-btn:focus {
+     border: 1px #292f33 solid;
+ }
+
+ .c2 .as-colorpicker .color {
+     height: 12px;
+     width: 60%;
+     display: inline-block;
+     background-color: white;
+     border: 1px solid black;
+ }
+
+ .c2 .as-colorpicker .color-btn > .arrow {
+     float: right;
+     height: 100%;
+     width: 30%;
+     display: inline-block;
+     vertical-align: top;
+     box-sizing: border-box;
+     padding-left: 2px;
+ }
+
+ .c2 .as-colorpicker .color-btn > .arrow > span {
+     font-size: 16px;
+ }
+
+ /*deactivated*/
+ .c2:not(.active) {
+ }
+
+ .c2:not(.active) .line {
+     background-color: #ddd;
+ }
+
+ .c2:not(.active) .as-range > div,
+ .c2:not(.active) .as-colorpicker > .color-btn {
+     background-color: #ccc;
+ }
+
+ /*disabled*/
+ .c2[disabled] > .notepad {
+     background-color: #eee;
+ }
+
+ .c2 button:disabled,
+ .c2 select:disabled {
+     background-color: #ccc !important;
+ }
+
+
+ /*/////////////////////////////////////////////////////////////////////////////////////////////////////*/
+ /* end */
+
+ .c0:not(:disabled):hover,
+ .c0:not(:disabled):focus,
+ .c1:not(:disabled):hover,
+ .c1:not(:disabled):focus,
+ .c3:not(:disabled):hover,
+ .c3:not(:disabled):focus,
+ .c4:not(:disabled):hover,
+ .c4:not(:disabled):focus,
+ .c5:not(:disabled):hover,
+ .c5:not(:disabled):focus,
+ .c14:not(:disabled):hover,
+ .c14:not(:disabled):focus {
+     /*/*border: 1px solid #292f33 ;*/
+     color: #292f33;
+     box-shadow: 0 0 1px 1px #292f33;
+ }
+
+ .c0:disabled, .c1:disabled, .c2:disabled, .c3:disabled, .c4:disabled, .c5:disabled, .c6:disabled, .c7:disabled,
+ .c9:disabled, .c10:disabled, .c11:disabled, .c12:disabled, .c13:disabled {
+     background-color: #eee;
+     transition: none;
+ }
+
+
+ .c3 {
+     padding: 6px 12px;
+     height: 30px;
+     width: 100%;
+ }
+
+ .c4 {
+     height: 30px;
+     width: 100%;
+ }
+
+ .c5 {
+     border: none;
+     width: 100%;
+     border: #ddd solid thin;
+     vertical-align: top;
+     display: inline-block;
+     border-radius: 3px;
+     font-size: small;
+     padding: 5px 12px;
+     height: 30px;
+ }
+
+ .c6,
+ .c7 {
+     height: 15px;
+     width: 15px;
+     margin-top: 5px;
+     margin-left: 10px;
+     min-width: 15px;
+     min-height: 15px;
+ }
+
+ .c8 {
+     width: 100%;
+     border: none;
+     padding: 0;
+ }
+
+
+ .c11 {
+     display: inline-block;
+     width: 100%;
+     min-height: 12px;
+     min-width: 12px;
+     overflow: hidden;
+     background-color: transparent;
+     border: none;
+ }
+
+ .c12 {
+     background: #f0f0f0;
+     color: #666;
+ }
+
+ .c12, .c13, .c15 {
+     height: 40px;
+     width: 100px;
+     border: thin #ddd solid;
+     background: white;
+     color: black;
+     border-radius: 2px;
+     font-size: 14px;
+     font-weight: 400;
+     margin-bottom: 5px;
+ }
+
+ .c12:hover,
+ .c13:hover,
+ .c15:hover,
+ .c12:focus,
+ .c13:focus,
+ .c15:focus {
+     /*border: 1px solid #292f33;*/
+     color: #292f33;
+     box-shadow: 0 0 1px 1px #292f33;
+ }
+
+
+ .e1 {
+     display: inline-block;
+     height: 24px;
+     font-size: small;
+     overflow: hidden;
+     width: 100%;
+     line-height: 24px;
+     word-break: normal;
+     font-weight: normal;
+ }
+
+ .e2 {
+     display: inline-block;
+     width: 100%;
+     height: 100px;
+     box-sizing: border-box;
+     border-style: solid;
+     border-width: 0px;
+ }
+
+ .e2 img {
+     width: 100%;
+     height: 100%;
+     box-sizing: border-box;
+ }
+
+
+ /* Item Picker */
+ .div-group {
+     display: inline-block;
+     border: none;
+     width: 100%;
+     min-height: 40px;
+     min-width: 72px;
+     text-align: left;
+ }
+
+
+ .div-display {
+     overflow: auto;
+     border: #ddd solid thin;
+     min-height: 40px;
+     padding: 5px 8px;
+     box-sizing: border-box;
+     cursor: text;
+     background-color: white;
+ }
+
+ .div-btns {
+     float: right;
+ }
+
+ .div-btns-1 {
+     width: 28px;
+ }
+
+ .div-btns-2 {
+     width: 56px;
+ }
+
+ .div-btns > button {
+     width: 25px;
+     margin-left: 3px;
+     height: 25px;
+     border: #ddd solid thin;
+     border-radius: 2px;
+     color: black;
+     padding: 0;
+     display: inline-block;
+     background-color: white;
+     cursor: pointer;
+ }
+
+ .div-display:hover,
+ .div-display:focus {
+     box-shadow: 0 0 1px 1px #292f33;
+     color: #292f33;
+ }
+
+ .div-btns > button:hover,
+ .div-btns > button:focus {
+     box-shadow: 0 0 1px 1px #292f33;
+     color: #292f33;
+ }
+
+ .div-btns > button > span {
+     top: 0;
+ }
+
+ .picked-item {
+     font-size: small;
+     display: inline-block;
+     background: #b7d6eb;
+     max-width: 100%;
+     margin-right: 8px;
+     margin-bottom: 5px;
+     height: 25px;
+ }
+
+ .picked-item > div:last-child {
+     padding: 0 6px 0 12px;
+     box-sizing: border-box;
+     height: 25px;
+     line-height: 25px;
+     overflow: hidden;
+ }
+
+ .picked-item > div:first-child {
+     padding: 5px 5px 5px 5px;
+     height: 25px;
+     box-sizing: border-box;
+     font-size: small;
+     display: inline-block;
+     border-left: 1px solid #eee;
+     cursor: pointer;
+     vertical-align: top;
+     float: right;
+ }
+
+ .picked-item + span:hover {
+     background: #9cb2c1;
+ }
+
+ .c8[disabled] > div,
+ .c8[disabled] button {
+     background-color: #eee;
+     cursor: not-allowed;
+     transition: none;
+ }
+ /* end */
+
+
+
+
+ /* color picker */
+ #colorpck {
+     position: absolute;
+     border: 1px #ddd solid;
+     display: inline-block;
+     padding: 8px 10px;
+     overflow: hidden;
+     z-index: 1000;
+     background-color: white;
+     box-shadow: 0px 1px 2px 2px #aaa;
+ }
+
+ #colorpck > div {
+     width: 173px;
+     padding: 3px;
+     vertical-align: top;
+ }
+
+ #colorpck > div:last-child {
+     line-height: 13px;
+     height: 130px;
+ }
+
+ .border {
+     /*border: 1px solid blue;*/
+     white-space: initial;
+     height: 28px;
+ }
+
+ .color-blk {
+     height: 18px;
+     width: 18px;
+     display: inline-block;
+     font-size: 12px;
+     float: left;
+     margin-left: 3px;
+     margin-top: 3px;
+ }
+
+ .color-blk:hover {
+     border: 1px solid black;
+     box-sizing: border-box;
+ }
+
+ /*TODO*/
+ /*Input*/
+ .view input, .view textarea, .view select {
+     margin: 0;
+     letter-spacing: normal;
+     word-spacing: normal;
+     line-height: normal;
+     text-transform: none;
+     text-indent: 0;
+     text-shadow: none;
+     display: inline-block;
+     text-align: start;
+ }
+
+
+ .view table td,
+ .view table th {
+     vertical-align: top;
+     white-space: -moz-pre-wrap !important; /* Mozilla, since 1999 */
+     white-space: -pre-wrap; /* Opera 4-6 */
+     white-space: -o-pre-wrap; /* Opera 7 */
+     white-space: pre-wrap; /* css-3 */
+     word-wrap: break-word; /* Internet Explorer 5.5+ */
+     word-break: break-all;
+     white-space: normal;
+     padding: 1px;
+ }
+
+ .view table {
+     display: inline-table;
+     vertical-align: top;
+     text-align: left;
+ }
+
+ .view table,
+ .view th,
+ .view td {
+     position: relative;
+     border-collapse: separate;
+     border-spacing: 0;
+     font-weight: normal;
+ }
+ /*.view table tr td {
+                padding:0;
+            }*/
+
+ .view table > tbody > tr > td,
+ .view table > tbody > tr > th {
+     box-sizing: border-box;
+ }
+
+
+ .c9 .dlt_td {
+     width: 35px;
+     background-color: white;
+     vertical-align: middle;
+ }
+
+ .c9 > div {
+     padding: 1px;
+     box-sizing: border-box;
+     text-align: left;
+ }
+
+ .c9 .dlt_r {
+     font-size: 20px;
+     width: 35px;
+     height: 100%;
+     text-align: center;
+     border: none;
+     background-color: transparent;
+     color: red;
+     cursor: pointer;
+ }
+
+ .c9 .pages {
+     list-style: none;
+     float: right;
+     margin: 0;
+ }
+
+ .c9 .pages > * {
+     height: 27px;
+     padding: 0px 10px;
+     color: #aaa;
+     border: 1px solid #ddd;
+     border-right: 0;
+     box-sizing: border-box;
+     display: inline-block;
+     text-align: center;
+     line-height: 27px;
+     font-size: 13px;
+     vertical-align: top;
+     cursor: pointer;
+ }
+
+ .c9 .pages > li:hover {
+     color: #292f33;
+ }
+
+ .c9 .pages > li > a {
+     line-height: 27px;
+ }
+
+ .c9 .pages > li.active {
+     background-color: #4285f4;
+     color: white;
+ }
+
+ .c9 .pages > *:last-child {
+     border-right: 1px solid #ddd;
+ }
+
+
+ .c9 .ist_r {
+     width: 150px;
+     height: 27px;
+     border: 1px solid #ddd;
+     background-color: #4285f4;
+     color: white;
+     font-size: small;
+     border-radius: 2px;
+ }
+
+
+ .c9 .ist_r:hover {
+     background-color: #292f33;
+ }
+
+ .c9 .sort-order {
+     color: #aaa;
+     float: right;
+     position: absolute;
+     right: 3px;
+     top: 2px;
+     font-size: 16px;
+ }
+
+ .c9 > table > tbody > tr > th:focus,
+ .c9 > table > tbody > tr > th:active {
+     background-color: #eef3f6 !important;
+ }
+
+ .c15 {
+     background-color: transparent;
+     border: none;
+     padding: 0;
+     cursor: pointer;
+     border-radius: 2px;
+ }
+
+ .c15 > img {
+     box-sizing: border-box;
+     width: 100%;
+     height: 100%;
+ }
+
+ .c16 {
+     overflow: hidden;
+ }
+
+ /*.c11 {
+
+            border: none;
+            background-color:transparent;
+
+        }*/
+
+
+ /* dialge */
+ #c_dialog, #i_dialog {
+     padding: 5px 20px;
+     font-family: Arial;
+     font-size: 15px;
+     max-height: 150px;
+ }
+
+ .fix-position {
+     position: fixed;
+ }
+
+
+ /* widget */
+ /* dialog */
+ /* modal */
+ .ui-widget-overlay {
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background-color: #000548;
+     opacity: 0.2;
+ }
+
+ .ui-dialog {
+     border: none;
+     border-radius: 7px;
+     position: absolute;
+     z-index: 999;
+     box-shadow: 0 0 1px 1px #ddd;
+     background-color: #f5f5f5;
+ }
+
+ .ui-dialog.has-close .ui-dialog-titlebar-close {
+     display: inline;
+ }
+
+ .ui-dialog-titlebar-close {
+     display: none;
+     float: right;
+     border: none;
+     background-color: transparent;
+     font-size: medium;
+ }
+
+ .ui-dialog-titlebar {
+     padding: 10px 10px 0;
+     border-radius: 0px;
+     background-color: #f5f5f5;
+     /*border:1px solid white;*/
+     border-bottom: 1px solid #f5f5f5;
+     height: 30px;
+     border-top-left-radius: 0px;
+     border-top-right-radius: 0px;
+     /*border: none;*/
+ }
+
+ .ui-dialog-title {
+     margin-top: 0;
+     margin-bottom: 0;
+     color: #444;
+     font-family: Arial;
+     font-size: 18px;
+ }
+
+ .ui-dialog-titlebar-close {
+     overflow: hidden;
+ }
+
+ .ui-dialog-content {
+     opacity: initial;
+     background-color: #f5f5f5;
+     overflow: hidden;
+     padding: 10px;
+     box-sizing: border-box;
+ }
+
+ .ui-dialog-buttonset {
+     padding: 20px 15px 30px;
+     background-color: #f5f5f5;
+     overflow: hidden;
+     padding-bottom: 10px;
+     border-bottom-left-radius: 0px;
+     border-bottom-right-radius: 0px;
+ }
+
+ .ui-dialog-buttonset > button {
+     display: inline-block;
+     text-align: center;
+     white-space: nowrap;
+     cursor: pointer;
+     color: white;
+     margin-left: 5px;
+     padding: 5px 10px;
+     font-size: small;
+     height: 30px;
+     min-width: 80px;
+     border-radius: 3px;
+     float: right;
+ }
+
+ .ui-dialog-buttonset > button:nth-child(3) {
+     background-color: #6eb5e6;
+     border: 1px solid #6eb5e6;
+     float: left;
+ }
+
+ .ui-dialog-buttonset > button:nth-child(2) {
+     background-color: #27a347;
+     border: 1px solid #27a347;
+ }
+
+ .ui-dialog-buttonset > button:first-child {
+     background-color: #4285f4;
+     border: 1px solid #4285f4;
+ }
+
+ .ui-dialog-buttonset > button:nth-child(2):hover,
+ .ui-dialog-buttonset > button:nth-child(2):focus,
+ .ui-dialog-buttonset > button:nth-child(2):active {
+     background-color: #0b852b;
+ }
+
+ .ui-dialog-buttonset > button:first-child:hover,
+ .ui-dialog-buttonset > button:first-child:focus,
+ .ui-dialog-buttonset > button:first-child:active {
+     background-color: #1c4fa3;
+ }
+
+ .ui-dialog-buttonset > button:nth-child(3):hover,
+ .ui-dialog-buttonset > button:nth-child(3):focus,
+ .ui-dialog-buttonset > button:nth-child(3):active {
+     background-color: #6cb8ed;
+ }
+
+ .ui-dialog-buttonset > button.disabled {
+     cursor: not-allowed;
+     filter: alpha(opacity=65);
+     -webkit-box-shadow: none;
+     box-shadow: none;
+     opacity: .65;
+ }
+
+ /* ripple */
+ .rpl {
+     position: absolute;
+     z-index: 0;
+     background-color: #aaa;
+     opacity: 0.2;
+ }
+
+ /* datepicker */
+ .ui-datepicker {
+     background-color: white;
+     padding: 10px;
+     box-shadow: 0px 1px 2px 2px #aaa;
+     font-family: Raleway, Arial;
+     /*border-radius:5px;*/
+     border-radius: 0px;
+     display: none;
+ }
+
+ .ui-datepicker-calendar {
+     border-spacing: 10px;
+ }
+
+ .ui-datepicker-calendar td,
+ .ui-datepicker-calendar th {
+     text-align: center;
+     border-radius: 6px;
+     width: 20px;
+     height: 20px;
+     font-weight: 200;
+     line-height: 20px;
+     /*background-color:#eee;*/
+ }
+
+ .ui-datepicker-calendar th {
+     font-size: 14px;
+     font-weight: bold;
+ }
+
+
+ .ui-datepicker-calendar a {
+     color: #666;
+     text-decoration: none;
+ }
+
+ .ui-datepicker-header {
+     border: none;
+     padding: 3px 0px;
+     box-sizing: border-box;
+ }
+
+ .ui-datepicker-header > div {
+     display: inline-block;
+ }
+
+ .ui-datepicker-prev {
+     float: left;
+     color: #4285f4;
+     /*font-weight:bold;*/
+     cursor: pointer;
+ }
+
+ .ui-datepicker-next {
+     float: right;
+     color: #4285f4;
+     /*font-weight:bold;*/
+     cursor: pointer;
+ }
+
+ .ui-datepicker-title {
+     width: 70%;
+     text-align: center;
+     font-size: 14px;
+ }
+
+ .ui-datepicker-current-day {
+     background-color: #4285f4;
+ }
+
+ .ui-datepicker-current-day > a {
+     color: white;
+ }
+
+ .ui-datepicker-other-month > span {
+     color: #ccc;
+ }
+
+ .ui-datepicker-today {
+     background-color: #ddd;
+ }
+
+ .ui-datepicker-today > a {
+     color: #4285f4;
+     font-weight: bold;
+ }
+
+ .render-error {
+     border: 1px solid red !important;
+ }
+
+ input[type="radio"].render-error,
+ input[type="checkbox"].render-error {
+     outline: 1px solid red;
+ }
+
+ .render-aster {
+     position: absolute;
+     display: inline-block;
+     color: red;
+     z-index: 100;
+ }
+
+ /* progressBar */
+ #xdoc_progress {
+     z-index: 9999;
+     position: absolute;
+ }

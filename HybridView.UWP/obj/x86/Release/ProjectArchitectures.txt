@@ -1,0 +1,2 @@
+D:\Xamarin\Latest\HybridView_24-Aug_2017_06-35\HybridView\HybridView.UWP\HybridView.UWP.csproj;x86
+D:\Xamarin\Latest\HybridView_24-Aug_2017_06-35\HybridView\HybridView\HybridView.csproj;neutral

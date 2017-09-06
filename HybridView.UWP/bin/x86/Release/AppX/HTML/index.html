@@ -1,0 +1,88 @@
+﻿<html>
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="description" content="Custom Renderer">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Custom Renderer</title>
+    <script src="jquery-2.2.2.js"></script>
+    <link rel="stylesheet" type="text/css" href="customStyle.css">
+    <!--<style src="render.css"></style>-->
+    <style src="CustomCss\font-awesome-4.7.0\css\font-awesome.min.css"></style>
+    <link rel="stylesheet" href="CustomCss\font-awesome-4.7.0\css\font-awesome.min.css" />
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />-->
+    <script src="http://yogeshpatil:1337/vorlon.js"></script>
+</head>
+
+<body>
+    <!--  <script src="jquery-3.2.1.min.js"></script>-->
+    <style>
+    </style>
+    <h1>Custom Renderer</h1>
+
+    <button onclick="NativeFunc('callNativeFunc', this.innerHTML, function(res) { Native('callNative', 'from func'); })">Click NativeFunc</button>
+    <button onclick="Native('callNative', 'from native')">Click Native</button>
+    <div id="updateHtml"  style="overflow:scroll; height:600px;"></div>
+    <br />
+    <table style="width: 573px;">
+        <tbody>
+            <tr style="height: 21px;">
+                <td style="width: 305px; height: 21px;"><strong>&nbsp;First Name</strong></td>
+                <td style="width: 267px; height: 21px;"><input id="firstname" name="firstname" type="text" onchange="javascript:invokeCSCode();" /></td>
+            </tr>
+            <tr style="height: 21px;">
+                <td style="width: 305px; height: 21px;"><strong>&nbsp;Last Name</strong></td>
+                <td style="width: 267px; height: 21px;">
+                    <input id="lastname" name="lastname" type="text" onchange="javascript:invokeCSCode();" />
+                </td>
+            </tr>
+            <tr style="height: 21px;">
+                <td style="width: 305px; height: 21px;"><strong>&nbsp;Date of Birth</strong></td>
+                <td style="width: 267px; height: 21px;"><input id="dateofBirth" name="dateofBirth" type="date" onchange="javascript:invokeCSCode();" /></td>
+            </tr>
+            <tr style="height: 21px;">
+                <td style="width: 305px; height: 21px;"><strong>&nbsp;Gender&nbsp;</strong></td>
+                <td style="width: 267px; height: 21px;">
+                    <select name="gender" id="gender" onchange="javascript:invokeCSCode();">
+                        <option selected="selected" value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                </td>
+            </tr>
+            <tr style="height: 21px;">
+                <td style="width: 305px; height: 21px;"><strong>&nbsp;Employment Date&nbsp;</strong></td>
+                <td style="width: 267px; height: 21px;"><input id="employmentDate" name="employmentDate" onchange="javascript:invokeCSCode();" type="date" /></td>
+            </tr>
+            <tr style="height: 22px;">
+                <td style="width: 305px; height: 22px;"><strong>&nbsp;Empoyment Type</strong></td>
+                <td style="width: 267px; height: 22px;">
+                    <select id="employmentType" name="employmentType" onchange="javascript:invokeCSCode();">
+                        <option selected="selected" value="FullTime">FullTime</option>
+                        <option value="Contract">Contract</option>
+                    </select>
+                </td>
+            </tr>
+            <tr style="height: 21px;">
+                <td style="width: 305px; height: 21px;"><strong>&nbsp;Hire Date</strong></td>
+                <td style="width: 267px; height: 21px;"><input id="hireDate" name="hireDate" onchange="javascript:invokeCSCode();" type="date" /></td>
+            </tr>
+            <tr style="height: 21px;">
+                <td style="width: 305px; height: 21px;">&nbsp;<strong>Join Date</strong></td>
+                <td style="width: 267px; height: 21px;"><input id="joinDate" name="joinDate" onchange="javascript:invokeCSCode();" type="date" /></td>
+            </tr>
+        </tbody>
+    </table>
+    <i class="fa fa-car"></i>
+    <a class="fa fa-car" href="#">This is a link</a>
+    <button type="button" onclick="javascript:invokeCSCode();">
+        Invoke C# Code
+    </button>
+    <br />
+    <p id="result">Result:</p>
+    <script src="jsscript.js"></script>
+
+</body>
+
+</html>

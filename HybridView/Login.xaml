@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HybridView.Login">
+    <ContentPage.Content>
+        <ScrollView Orientation="Vertical">
+            <RelativeLayout>
+                <ScrollView Orientation="Vertical" >
+                    <StackLayout 
+                        RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0.99}"
+                        RelativeLayout.YConstraint= "{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=0.01}"
+                        BackgroundColor="White">
+                        <StackLayout Orientation="Vertical" BackgroundColor="#3d8ee9" >
+                            <Frame IsClippedToBounds="false" HasShadow="True" BackgroundColor="#f0eff4" 
+                                   HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" 
+                                   Margin="10" WidthRequest="250" >
+
+                                <!--<Frame.WidthRequest  >
+                                    <OnPlatform x:TypeArguments="Width" Android="300" iOS="200" />
+                                </Frame.WidthRequest>-->
+                                
+                                <Frame.OutlineColor>
+                                    <OnPlatform x:TypeArguments="Color" Android="#f0eff4" iOS="#f0eff4" />
+                                </Frame.OutlineColor>
+
+                                <Frame.Margin>
+                                    <OnPlatform x:TypeArguments="Thickness" Android="10" iOS="10" />
+                                </Frame.Margin>
+
+                                <StackLayout Orientation="Vertical" >
+                                    <Image Source="logo.png"  />
+
+                                    <Label Text="Username" TextColor="Black" />
+                                    <Entry x:Name="usernameEntry" Placeholder="username" Keyboard="Text" >
+
+                                    </Entry>
+
+                                    <Label Text="Password" TextColor="Black" />
+                                    <Entry x:Name="passwordEntry" IsPassword="true" Placeholder="Password" Keyboard="Text"/>
+
+                                    <Button x:Name="btnLogin" Text="Sign in" BackgroundColor="#5581da" TextColor="#FFFFFF" Clicked="doLogin"/>
+                                </StackLayout>
+                            </Frame>
+
+                        </StackLayout>
+
+                        <Label Margin="30" BackgroundColor="White" TextColor="Black" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" 
+                           Text="Lorem ipsum dolor sit amet, nobis doctus commodo eam no, ius ad persecuti temporibus. Homero impetus reprehendunt mel cu, mollis tibique principes per ea. Sale nostro eruditi no pro, mei unum saperet ne, te modo latine usu. Ius verear maiestatis an. Mel cu iriure officiis, ne eam impetus torquatos persecuti. Audire nusquam adversarium te quo."
+                        />
+                    </StackLayout>
+                </ScrollView>
+            </RelativeLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,35 @@
+* {
+	outline: none;
+}
+
+/*input[type="checkbox"] {
+	-webkit-appearance: none;
+	height: 17px;
+	width:17px;
+	border: 1px solid #318CB8;
+	box-shadow: none;
+	outline:none;
+}
+
+input[type="checkbox"]:checked {
+	background-color: #318CB8;
+}
+
+input[type="checkbox"]:checked:after {
+	content:'\2714';
+	font-size: 14px;
+	color:white;
+	position: relative;
+	top:-3px;
+	left:2px;
+	outline:none;
+}
+
+input[type="checkbox"]:active {
+	box-shadow: none;
+	outline:none;
+}*/
+
+
+
+
